@@ -4,6 +4,7 @@ from lib.drawsingraph import drawsingraph
 from lib.drawnameimage import drawnameimage
 from PIL import Image
 import io
+import os
 
 app = Flask(__name__)
 CORS(app)  # CORSを有効にする
@@ -53,4 +54,4 @@ def convert_to_monochrome():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=os.getenv("PORT", default=5000))
