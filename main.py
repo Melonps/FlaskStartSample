@@ -1,7 +1,7 @@
 from flask import Flask, request, send_file
 from flask_cors import CORS
-from lib.drawsingraph import drawsingraph
-from lib.drawnameimage import drawnameimage
+from drawsingraph import drawsingraph
+from drawnameimage import drawnameimage
 from PIL import Image
 import io
 import os
